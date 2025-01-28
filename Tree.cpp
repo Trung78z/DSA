@@ -70,6 +70,7 @@ public:
         cout << endl;
     }
 };
+
 int main()
 {
     Tree<int> tree;
