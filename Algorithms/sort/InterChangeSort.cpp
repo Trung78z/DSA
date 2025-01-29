@@ -32,9 +32,10 @@ void display(int *a, int n)
 }
 int main()
 {
-    int a[] = {5, 2, 4, 6, 1, 3};
-    int n = sizeof(a) / sizeof(a[0]);
+    int *a = new int[6]{5, 2, 4, 6, 1, 3};
+    int n = 6;
     interChangeSort(a, n);
     display(a, n);
+    delete[] a;
     return 0;
 }
